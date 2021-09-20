@@ -1,8 +1,7 @@
 let projects = [
   {
     name: "EasyCrm",
-    description:
-      "A mini customer relationship management dashboard",
+    description: "A mini customer relationship management dashboard",
     technologies: ["React", "Redux"],
     github: "https://github.com/devchux/easycrm-frontend",
     preview: "https://easycrmui.netlify.app/",
@@ -10,8 +9,7 @@ let projects = [
   },
   {
     name: "Luno Page Clone",
-    description:
-      "A clone of luno's official landing page.",
+    description: "A clone of luno's official landing page.",
     technologies: ["React", "Tailwind CSS"],
     github: "https://github.com/devchux/luno-landing-page",
     preview: "https://luno-page.netlify.app",
@@ -19,8 +17,7 @@ let projects = [
   },
   {
     name: "Balance",
-    description:
-      "A mern stack app to track a user's expenses.",
+    description: "A mern stack app to track a user's expenses.",
     technologies: ["React", "Express", "MongoDB"],
     github: "https://github.com/devchux/balance/",
     preview: "",
@@ -30,7 +27,13 @@ let projects = [
     name: "DevHunt",
     description:
       "A web application that provides a list of developers and their details by consuming Github graphql Api.",
-    technologies: ["React", "SCSS", "Material UI", "Github GraphQL API", "Apollo Client"],
+    technologies: [
+      "React",
+      "SCSS",
+      "Material UI",
+      "Github GraphQL API",
+      "Apollo Client",
+    ],
     github: "https://github.com/devchux/devhunt",
     preview: "https://devhunt-github.netlify.app/",
     image: "",
@@ -72,8 +75,7 @@ let projects = [
   },
   {
     name: "Mini Calculator",
-    description:
-      "A simple calculator.",
+    description: "A simple calculator.",
     technologies: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/devchux/calculator-js",
     preview: "https://devchux.github.io/calculator-js/",
@@ -96,13 +98,25 @@ projects.forEach((project) => {
                                 <p>${project.description}</p>
                             </div>
                             <div class="projects__card--content--tech">
-                              ${project.technologies.map(tool => ( `
+                              ${project.technologies
+                                .map(
+                                  (tool) => `
                                 <span>${tool}</span>
-                              `)).join("")}
+                              `
+                                )
+                                .join("")}
                             </div>
                             <div class="projects__card--content--links">
-                              ${project.github ? `<a href="${project.github}" target="_blank"><span class="fa fa-github"></span></a>` : ''}
-                              ${project.preview ? `<a href="${project.preview}" target="_blank"><span class="fa fa-link"></span></a>` : ''}
+                              ${
+                                project.github
+                                  ? `<a href="${project.github}" target="_blank"><span class="fa fa-github"></span></a>`
+                                  : ""
+                              }
+                              ${
+                                project.preview
+                                  ? `<a href="${project.preview}" target="_blank"><span class="fa fa-link"></span></a>`
+                                  : ""
+                              }
                             </div>
                         </div>
                         <div class="projects__card--image">
@@ -118,5 +132,21 @@ projectContent.appendChild(fragment);
 let logo = document.querySelector("#logo");
 
 logo.addEventListener("click", () => {
-  window.location.href = "https://kelvinblaze.github.io";
+  window.location.href = "/";
+});
+
+gsap.from("nav", { duration: 1, y: -300, opacity: 0 });
+gsap.from("#header-image", {
+  duration: 2,
+  x: 300,
+  opacity: 0,
+  scale: 0.5,
+  ease: "bounce",
+});
+
+const cursor = document.querySelector(".custom-cursor");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.top = `${e.pageY + 10}px`;
+  cursor.style.left = `${e.pageX + 10}px`;
 });
