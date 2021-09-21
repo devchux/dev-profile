@@ -20,7 +20,7 @@ let projects = [
     description: "A mern stack app to track a user's expenses.",
     technologies: ["React", "Express", "MongoDB"],
     github: "https://github.com/devchux/balance/",
-    preview: "",
+    preview: "https://mybalance-app.netlify.app/",
     image: "",
   },
   {
