@@ -1,6 +1,6 @@
 let projects = [
   {
-    name: "EasyCrm",
+    name: "MiniCrm",
     description: "A mini customer relationship management dashboard",
     technologies: ["React", "Redux"],
     github: "https://github.com/devchux/easycrm-frontend",
@@ -61,7 +61,7 @@ let projects = [
     description: "Cash tracker app to estimate cash flow",
     technologies: ["React", "Redux"],
     github: "https://github.com/devchux/Cash-Tracker",
-    preview: "https://app.netlify.com/sites/cashtrackerv1",
+    preview: "https://cashtrackerv1.netlify.app/",
     image: "",
   },
   {
