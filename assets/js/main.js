@@ -8,6 +8,14 @@ let projects = [
     image: "",
   },
   {
+    name: "Balance",
+    description: "A mern stack app to track a user's expenses.",
+    technologies: ["React", "Express", "MongoDB"],
+    github: "https://github.com/devchux/balance/",
+    preview: "https://mybalance-app.netlify.app/",
+    image: "",
+  },
+  {
     name: "Luno Page Clone",
     description: "A clone of luno's official landing page.",
     technologies: ["React", "Tailwind CSS"],
@@ -16,11 +24,11 @@ let projects = [
     image: "",
   },
   {
-    name: "Balance",
-    description: "A mern stack app to track a user's expenses.",
-    technologies: ["React", "Express", "MongoDB"],
-    github: "https://github.com/devchux/balance/",
-    preview: "https://mybalance-app.netlify.app/",
+    name: "Breaking News",
+    description: "News application that displays latest new in Nigeria",
+    technologies: ["Next", "News Data API"],
+    github: "https://github.com/devchux/breaking-news",
+    preview: "https://breaking-news-alpha.vercel.app/",
     image: "",
   },
   {
