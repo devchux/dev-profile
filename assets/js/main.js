@@ -56,6 +56,15 @@ let projects = [
     image: "",
   },
   {
+    name: "Scala Page",
+    description:
+      "A landing page for an online investment trading platform",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    github: "https://github.com/devchux/scala-landing-page",
+    preview: "https://scala-page.netlify.app/",
+    image: "",
+  },
+  {
     name: "Instaclone",
     description:
       "An instagram-like web app built with JavaScript modularization practice and database management with IndexedDB",
