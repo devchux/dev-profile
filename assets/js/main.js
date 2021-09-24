@@ -1,5 +1,13 @@
 let projects = [
   {
+    name: "My Dream Job",
+    description: "A job placement website where users can search for jobs as well as create new jobs",
+    technologies: ["Node", "Express", "MongoDB", "EJS"],
+    github: "https://github.com/devchux/jobboard",
+    preview: "https://mydreamjob-alpha.herokuapp.com/",
+    image: "",
+  },
+  {
     name: "MiniCrm",
     description: "A mini customer relationship management dashboard",
     technologies: ["React", "Redux"],
