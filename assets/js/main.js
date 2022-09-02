@@ -135,11 +135,14 @@ let projects = [
   // },
 ];
 
+AOS.init();
+
 let projectContent = document.querySelector(".all-projects");
 var fragment = document.createDocumentFragment();
 
 projects.forEach((project) => {
   let div = document.createElement("div");
+  div.setAttribute("data-aos", "fade-up")
   div.innerHTML = `
   <div class="projects__card">
                         <div class="projects__card--content">
@@ -188,13 +191,13 @@ logo.addEventListener("click", () => {
 });
 
 gsap.from("nav", { duration: 1, y: -300, opacity: 0 });
-gsap.from("#header-image", {
-  duration: 2,
-  x: 300,
-  opacity: 0,
-  scale: 0.5,
-  ease: "bounce",
-});
+// gsap.from("#header-image", {
+//   duration: 2,
+//   x: 300,
+//   opacity: 0,
+//   scale: 0.5,
+//   ease: "bounce",
+// });
 
 const cursor = document.querySelector(".custom-cursor");
 

@@ -18,9 +18,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Micron CDN -->
     <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
     <!-- Typewritter Js -->
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body id="smooth-scroll">
@@ -58,9 +60,9 @@
                     <a href="mailto:chukwudieze97@gmail.com" data-micron="bounce" class="introduction--button">Get In
                         Touch</a>
                 </div>
-                <div class="image__wrapper">
+                <!-- <div class="image__wrapper">
                     <img src="./assets/images/3d_image.png" alt="3D image" id="header-image" >
-                </div>
+                </div> -->
             </div>
 
             <!-- About Me -->
@@ -69,7 +71,7 @@
                     <h2><span class="text-accent">01. </span> About Me</h2>
                 </div>
 
-                <div class="about__content">
+                <div class="about__content" data-aos="fade-up">
                     <div class="details">
                         <p>Hey there! I'm Chukwudi, a software developer based in Lagos, Nigeria 
                             with a passion for solving UI/UX problems using JavaScript and its frameworks</p>
@@ -124,7 +126,7 @@
                     <h2><span class="text-accent">03. </span> Get In Touch </h2>
                 </div>
 
-                <div class="contact__details">
+                <div class="contact__details" data-aos="fade-up">
                     <div class="mail-link">
                         <p>Have a little something, something you want to talk to me about? Well, why dont you send me a
                             mail now. I will love to be a part of something great. </p>
@@ -148,13 +150,13 @@
             loop: true
         });
 
-        typewriter.typeString('Creativity • Quality')
+        typewriter.typeString('<strong>Frontend Developer!</strong>')
+            .pauseFor(100)
+            .deleteAll()
+            .typeString('Creativity • Quality') 
             .pauseFor(100)
             .deleteAll()
             .typeString('I build awesome web apps')
-            .pauseFor(100)
-            .deleteAll()
-            .typeString('<strong>I am a frontend developer!</strong>')
             .start();
     </script>
 
