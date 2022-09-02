@@ -15,7 +15,7 @@ html {
 body {
   background: #1a181b;
   font-size: 1.6rem;
-  font-family: "Cormorant", sans-serif;
+  font-family: "Fira Code", sans-serif;
   overflow-x: hidden;
 }
 
@@ -423,11 +423,9 @@ main .container .projects .all-projects {
 main .container .projects__card {
   width: 100%;
   height: auto;
-  background: #1a181b;
   border-radius: 0.4rem;
   cursor: pointer;
   padding: 3.2rem;
-  box-shadow: 0 0 30px #000000;
 }
 
 @media (max-width: 768px) {
@@ -438,10 +436,12 @@ main .container .projects__card {
 }
 
 main .container .projects__card:hover {
+  background: #1a181b;
+  box-shadow: 0 0 30px #000000;
   -webkit-transition: all 250ms ease 0s;
   transition: all 250ms ease 0s;
-  -webkit-transform: scale(1.02) skew(1deg, -1.5deg);
-          transform: scale(1.02) skew(1deg, -1.5deg);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 main .container .projects__card--content--header, main .container .projects__card--content--about, main .container .projects__card--content--tech, main .container .projects__card--content--links {
@@ -455,7 +455,7 @@ main .container .projects__card--content--header {
 main .container .projects__card--content--about {
   color: #a0aec0;
   line-height: 2;
-  height: 100px;
+  height: 120px;
 }
 
 main .container .projects__card--content--tech {
