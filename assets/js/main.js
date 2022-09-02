@@ -201,7 +201,6 @@ gsap.from("nav", { duration: 1, y: -300, opacity: 0 });
 
 const cursor = document.querySelector(".custom-cursor");
 
-document.addEventListener("mousemove", (e) => {
-  cursor.style.top = `${e.pageY + 10}px`;
-  cursor.style.left = `${e.pageX + 10}px`;
-});
+document.onmousemove = (e) => {
+  cursor.style.transform = `translate(${e.pageX + 10}px, ${e.pageY + 10}px)`;
+};
