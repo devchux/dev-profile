@@ -27,6 +27,15 @@ let projects = [
     image: "",
   },
   {
+    name: "Playstation 4 UI",
+    description:
+      "An interactive play station 4 landing page clone.",
+    technologies: ["ReactJs", "Sass"],
+    github: "https://github.com/devchux/playstation",
+    preview: "https://playstation4.netlify.app/",
+    image: "",
+  },
+  {
     name: "My Dream Job",
     description:
       "A job placement website where users can search for jobs as well as create new jobs",
